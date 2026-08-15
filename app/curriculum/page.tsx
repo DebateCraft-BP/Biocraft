@@ -5,6 +5,7 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
   title: "Curriculum",
   description: "Four units, ten sessions: the full syllabus for the Fall 2026 Bioethics course.",
+  alternates: { canonical: "/curriculum" },
 };
 
 export default function CurriculumPage() {

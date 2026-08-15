@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Source_Serif_4 } from "next/font/google";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const sourceSerif = Source_Serif_4({
@@ -11,7 +12,7 @@ const sourceSerif = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://biocraft.example"),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "BioCraft — Bioethics: Science and the Future of Medicine",
     template: "%s — BioCraft",

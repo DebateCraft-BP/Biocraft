@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { team } from "@/content/team";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "About",
   description: "The Harkness method, the mission behind BioCraft, and the people running the course.",
+  alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {
@@ -31,6 +33,13 @@ export default function AboutPage() {
         <ul className={styles.team}>
           {team.map((person) => (
             <li key={person.name} className={styles.person}>
+              <Image
+                src={person.photo}
+                alt={person.name}
+                width={96}
+                height={96}
+                className={styles.personPhoto}
+              />
               <h3 className={styles.personName}>{person.name}</h3>
               <p className={styles.personRole}>{person.role}</p>
               <p className={styles.personBio}>{person.bio}</p>

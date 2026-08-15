@@ -2,6 +2,8 @@ import Link from "next/link";
 import styles from "./Footer.module.css";
 
 const APPLY_URL = "https://forms.gle/HXagfZE1e7NiD4KJ7";
+const EBS_URL = "https://www.exeterbiosymposium.page/";
+const DEBATECRAFT_URL = "https://www.debatecraft.org/index.html";
 
 export default function Footer() {
   return (
@@ -24,6 +26,15 @@ export default function Footer() {
           </Link>
           <a href={APPLY_URL} target="_blank" rel="noopener noreferrer" className="pressable">
             Apply
+          </a>
+        </nav>
+
+        <nav className={styles.partners} aria-label="Partner organizations">
+          <a href={EBS_URL} target="_blank" rel="noopener noreferrer" className="pressable">
+            Exeter Biology Symposium ↗
+          </a>
+          <a href={DEBATECRAFT_URL} target="_blank" rel="noopener noreferrer" className="pressable">
+            DebateCraft Academy ↗
           </a>
         </nav>
 

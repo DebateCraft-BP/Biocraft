@@ -1,8 +1,13 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { units, courseStats, coursePositioning } from "@/content/curriculum";
 import styles from "./page.module.css";
 
 const APPLY_URL = "https://forms.gle/HXagfZE1e7NiD4KJ7";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 export default function HomePage() {
   return (

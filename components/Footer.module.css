@@ -51,6 +51,29 @@
   color: var(--fg);
 }
 
+.partners {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-5);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--hairline-soft);
+  font-size: var(--text-sm);
+  color: var(--muted);
+}
+
+.partners a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--muted);
+}
+
+.partners a:hover {
+  color: var(--fg);
+}
+
 .meta {
   font-size: var(--text-xs);
   letter-spacing: var(--tracking-label);
