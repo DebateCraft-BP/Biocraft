@@ -38,7 +38,17 @@ export default function Footer() {
           </a>
         </nav>
 
-        <p className={styles.meta}>Fall 2026 Cohort</p>
+        <div className={styles.bottom}>
+          <p className={styles.meta}>Fall 2026 Cohort</p>
+          <nav className={styles.legalLinks} aria-label="Legal">
+            <Link href="/terms" className="pressable">
+              Terms of Service
+            </Link>
+            <Link href="/privacy" className="pressable">
+              Privacy Policy
+            </Link>
+          </nav>
+        </div>
       </div>
     </footer>
   );
